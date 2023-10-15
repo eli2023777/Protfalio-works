@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+
+//reset all
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Using variables*/
+$textColor1: #FFFFFF;
+$textColor2: #F9F9F9a8;
+$fontFamily: 'Varela Round';
+
+
+
+@mixin bg {
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+}
+
+
+
+.container {
+    @include bg;
+    width: 100vw;
+    height: 1086px;
+
+    .textContainer {
+        position: absolute;
+        top: 337px;
+        left: 410px;
+        width: 1100px;
+        height: 407px;
+        text-align: center;
+
+        h1 {
+            height: 204px;
+            font: normal normal normal 160px/231px 'Satisfy';
+            margin-bottom: 10px;
+            color: $textColor1;
+            text-shadow: 0px 0px 36px #00000087;
+        }
+
+        h6 {
+            font: normal normal normal 32px/38px 'Varela Round';
+            margin-bottom: 18px;
+            color: $textColor1;
+        }
+
+        p {
+            height: 60px;
+            font-family: $fontFamily;
+            color: $textColor2;
+        }
+
+        form {
+            width: 1100px;
+            height: 73px;
+            display: flex;
+            flex-direction: row;
+            text-align: right;
+            direction: rtl;
+            justify-content: space-between;
+
+            label {
+                font-family: $fontFamily;
+                color: $textColor2;
+            }
+
+            input {
+                margin-top: 2px;
+                width: 418px;
+                height: 50px;
+                background: #F6F6F624 0% 0% no-repeat padding-box;
+                border: 2px solid $textColor1;
+            }
+
+            input.button {
+                width: 206px;
+                height: 50px;
+                background-color: $textColor1;
+                font-family: $fontFamily;
+                color: #1C1C1C;
+                cursor: pointer;
+                margin-top: 22px;
+                font-size: 16px;
+            }
+
+        }
+
+    }
+}
+
+
+@media (max-width: 370px) {
+    .container {
+        height: 657px;
+
+        .textContainer {
+            top: 90px;
+            left: 21px;
+            width: 328px;
+            height: 466px;
+
+            h1 {
+                height: 93px;
+                font: normal normal normal 60px/86px 'Satisfy';
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                font-size: 18px;
+                width: 298px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                width: 318px;
+                height: 120px;
+                color: #F9F9F9;
+            }
+
+            form {
+                width: 302px;
+                height: 200px;
+                flex-direction: column;
+
+                label {
+                    font-size: 11px;
+                }
+
+                input {
+                    width: 302px;
+                    height: 36px;
+                    margin-bottom: 15px;
+                }
+
+                input.button {
+                    width: 300px;
+                    height: 33px;
+                    font-size: 11px;
+                    color: #2823FD;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

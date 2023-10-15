@@ -1,0 +1,68 @@
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@1,6..12,600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1920px;
+            height: 1080px;
+        }
+
+        .topLine {
+            position: absolute;
+            top: 0;
+            left: 1486px;
+            width: 434px;
+            height: 18px;
+            background-color: #FDBD03;
+        }
+
+        .icon {
+            top: 63px;
+            left: 65px;
+            width: 95px;
+            height: 95px;
+            position: absolute;
+            background-color: #FDBD03;
+            border-radius: 50%;
+        }
+
+        img {
+            margin-left: 20px;
+            margin-top: 19px;
+        }
+
+        h1 {
+            left: 730px;
+            top: 226px;
+            width: 308px;
+            height: 97px;
+            font: normal normal 900 66px/97px Heebo;
+            text-align: right;
+            color: #FDBD03;
+            position: absolute;
+            margin-bottom: 15px;
+        }
+
+        p {
+            position: absolute;
+            top: 338px;
+            left: 653px;
+            width: 385px;
+            height: 58px;
+            color: #020253;
+            text-align: right;
+            font: normal normal normal 20px/29px Heebo;
+        }
+
+        .formContainer {
+            position: absolute;
+            top: 434px;
+            left: 183px;
+            width: 855px;
+            height: 258px;
+            text-align: right;
+        }

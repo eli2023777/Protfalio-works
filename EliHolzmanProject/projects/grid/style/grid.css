@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@1,6..12,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1920px;
+    height: 2288px;
+    /* UI Properties */
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    position: absolute;
+
+}
+
+.grid {
+    width: 1246px;
+    height: 1724px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+    margin: auto;
+    margin-top: 298px;
+}
+
+.topBox {
+    width: 613px;
+    height: 562px;
+    background: #020253 0% 0% no-repeat padding-box;
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+
+.topBox h2 {
+    width: 394px;
+    height: 80px;
+    margin-left: 104px;
+    margin-top: 195px;
+    margin-bottom: 19px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal bold 61px/80px Assistant;
+    letter-spacing: 0px;
+    color: #0EE1DA;
+}
+
+.topBox p {
+    width: 475px;
+    height: 52px;
+    margin-left: 63px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+}
+
+.buttomBox {
+    width: 613px;
+    height: 852px;
+    /* UI Properties */
+    background: #8E097C 0% 0% no-repeat padding-box;
+    grid-row: 4/7;
+    grid-column: 1/3;
+}
+
+.buttomBox h3 {
+    width: 340px;
+    height: 46px;
+    margin-left: 130px;
+    margin-top: 63px;
+    margin-bottom: 23px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal bold 35px/46px Assistant;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.buttomBox p {
+    width: 475px;
+    height: 52px;
+    margin-left: 63px;
+    margin-bottom: 70px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+}
+
+.formContainer {
+    width: 500px;
+    height: 429px;
+    margin-left: 56px;
+    text-align: right;
+}
+
+label {
+    width: 92px;
+    height: 24px;
+    /* UI Properties */
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #0EE1DA;
+}
+
+input {
+    width: 500px;
+    height: 60px;
+    /* UI Properties */
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border-bottom: #0EE1DA solid 5px;
+    margin-bottom: 20px;
+}
+
+.lastInput {
+    height: 172px;
+}
+
+button {
+    width: 501px;
+    height: 60px;
+    /* UI Properties */
+    background: #0EE1DA 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal bold 24px/33px Heebo;
+    letter-spacing: 0.36px;
+    color: #011560;
+    margin-left: 56px;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        left: 30px;
+        width: 370px;
+        height: 2012px;
+    }
+
+    .grid {
+        width: 370px;
+        height: 2012px;
+        margin-top: 0;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    img {
+        width: 159px;
+        height: 146px;
+    }
+
+    img:nth-child(odd) {
+        margin-left: 20px;
+    }
+
+    .topBox {
+        width: 370px;
+        height: 340px;
+        grid-row: 1/3;
+        grid-column: 1/3;
+        margin-bottom: 10px;
+    }
+
+    .topBox h2 {
+        width: 232px;
+        height: 47px;
+        font: normal normal bold 36px/47px Assistant;
+        margin-left: 63px;
+        margin-top: 117px;
+        margin-bottom: 14px;
+    }
+
+    .topBox p {
+        width: 287px;
+        height: 78px;
+        text-align: center;
+        font: normal normal normal 20px/26px Assistant;
+        margin-left: 38px;
+    }
+
+    .buttomBox {
+        width: 330px;
+        height: 518px;
+        grid-row: 7/10;
+        grid-column: 1/3;
+        margin-left: 20px;
+    }
+
+    .buttomBox h3 {
+        width: 242px;
+        height: 33px;
+        font: normal normal bold 25px/33px Assistant;
+        margin-left: 45px;
+        margin-top: 58px;
+        margin-bottom: 14px;
+    }
+
+    .buttomBox p {
+        width: 278px;
+        height: 38px;
+        font: normal normal normal 15px/19px Assistant;
+        margin-left: 27px;
+        margin-bottom: 30px;
+    }
+
+    .formContainer {
+        width: 278px;
+        height: 238px;
+        margin-left: 27px;
+        margin-bottom: 11px;
+    }
+
+    label {
+        width: 26px;
+        height: 10px;
+        font: normal normal bold 7px/10px Heebo;
+    }
+
+    input {
+        width: 278px;
+        height: 33px;
+        margin-bottom: 11px;
+        border-bottom: 3px solid #0EE1DA;
+    }
+
+    .lastInput {
+        height: 96px;
+    }
+
+    button {
+        width: 278px;
+        height: 33px;
+        margin-left: 27px;
+        font: normal normal bold 12px/16px Heebo;
+        letter-spacing: 0.18px;
+    }
+}

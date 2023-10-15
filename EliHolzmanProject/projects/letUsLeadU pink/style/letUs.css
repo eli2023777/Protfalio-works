@@ -1,0 +1,171 @@
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@1,6..12,600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .background {
+            top: 0px;
+            left: 0px;
+            width: 1920px;
+            height: 590px;
+        }
+
+        .litleBackground {
+            display: none;
+        }
+
+        .blackBox {
+            top: 157px;
+            left: 1056px;
+            width: 569px;
+            height: 643px;
+            /* UI Properties */
+            background: #1A1A1AD4 0% 0% no-repeat padding-box;
+            position: absolute;
+        }
+
+        .container {
+            width: 418px;
+            height: 428px;
+            margin: 75px 75px;
+            text-align: right;
+        }
+
+        h2 {
+            /* UI Properties */
+            font: normal normal 900 36px/53px Heebo;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-align: right;
+            margin-bottom: 21px;
+        }
+
+        .lorem {
+            height: 58px;
+            /* UI Properties */
+            font: normal normal normal 20px/29px Heebo;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+            text-align: right;
+            margin-bottom: 41px;
+        }
+
+        .formContainer {
+            width: 418px;
+            height: 167px;
+        }
+
+        .label {
+            height: 24px;
+            /* UI Properties */
+            font: normal normal bold 16px/24px Heebo;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-align: right;
+        }
+
+        .input {
+            width: 418px;
+            height: 50px;
+            /* UI Properties */
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #D31C75;
+        }
+
+        .btn {
+            left: 326px;
+            top: 453px;
+            width: 166px;
+            height: 50px;
+            right: 0;
+            bottom: 0;
+            /* UI Properties */
+            background: #D31C75 0% 0% no-repeat padding-box;
+            font: normal normal bold 22px/30px Heebo;
+            letter-spacing: 0.33px;
+            color: #FFFFFF;
+            text-align: center;
+            position: absolute;
+        }
+
+        @media screen and (max-width:800px) {
+
+            .background,
+            .blackBox {
+                width: 100vw;
+            }
+
+            .background {
+                display: none;
+            }
+
+            .litleBackground {
+                display: block;
+            }
+
+            .blackBox {
+                top: 89px;
+                left: 37px;
+                width: 299px;
+                height: 441px;
+            }
+
+            .container {
+                width: 230px;
+                height: 349px;
+                margin: auto;
+                margin-top: 42px;
+            }
+
+            h2 {
+                width: 146px;
+                height: 67px;
+                text-align: center;
+                font: normal normal 900 25px/30px Heebo;
+                letter-spacing: 0px;
+                margin: auto;
+                margin-bottom: 12px;
+            }
+
+            .lorem {
+                width: 229px;
+                height: 66px;
+                /* UI Properties */
+                text-align: center;
+                font: normal normal normal 15px/22px Heebo;
+                letter-spacing: 0px;
+                margin-bottom: 22px;
+            }
+
+            .formContainer {
+                /* top: 322px;
+                left: 71px; */
+                width: 230px;
+                height: 131px;
+                margin-bottom: 21px;
+            }
+
+            .label {
+                height: 21px;
+                /* UI Properties */
+                font: normal normal bold 14px/21px Heebo;
+            }
+
+            .input {
+                width: 230px;
+                height: 28px;
+                margin-bottom: 12px;
+            }
+
+            .btn {
+                left: 187px;
+                top: 357px;
+                width: 76px;
+                height: 33px;
+                font: normal normal bold 15px/20px Heebo;
+                letter-spacing: 0.23px;
+            }
+        }

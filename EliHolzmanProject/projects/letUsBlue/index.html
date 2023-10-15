@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let us (blue)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@1,6..12,600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1920px;
+            height: 1080px;
+            position: absolute;
+        }
+
+        header,
+        form {
+            width: 100vw;
+        }
+
+        header {
+            height: 743px;
+            margin-top: 0;
+            background-image: url(./images/letUsBlue.png);
+        }
+
+        header h1 {
+            position: absolute;
+            top: 282px;
+            left: 526px;
+            width: 868px;
+            height: 113px;
+            font: normal normal bold 86px/113px Assistant;
+            letter-spacing: 0px;
+            color: #D3E10E;
+        }
+
+        header p {
+            position: absolute;
+            top: 418px;
+            left: 600px;
+            width: 721px;
+            height: 26px;
+            font: normal normal normal 20px/26px Assistant;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+        }
+
+        form {
+            position: absolute;
+            top: 826px;
+            left: 410px;
+            width: 1099px;
+            height: 74px;
+            display: flex;
+            flex-direction: row;
+            direction: rtl;
+            justify-content: center;
+        }
+
+        .formControl {
+            margin-left: 37px;
+        }
+
+        .formControl label {
+            width: 52px;
+            height: 21px;
+            text-align: right;
+            font: normal normal bold 16px/21px Assistant;
+            letter-spacing: 0px;
+            color: #011560;
+        }
+
+        .formControl input {
+            width: 418px;
+            height: 50px;
+            background: #F6F6F6;
+            border-bottom: 4px solid #D3E10E;
+        }
+
+        input {
+            border: none;
+        }
+
+
+        form input[type=button] {
+            width: 166px;
+            height: 50px;
+            background: #D3E10E;
+            margin-right: 24px;
+            margin-top: 22px;
+            font: normal normal bold 22px/30px Assistant;
+            letter-spacing: 0.33px;
+            color: #011560;
+        }
+
+        @media screen and (max-width: 370px) {
+            .container {
+                width: 100vw;
+                height: 657px;
+            }
+
+            header {
+                height: 300px;
+                background-image: url(./images/smallLetUsBlue.png);
+            }
+
+            header h1,
+            header p {
+                display: none;
+            }
+
+            form {
+                top: 381px;
+                left: 42px;
+                width: 286px;
+                height: 175px;
+                display: block;
+            }
+
+
+            .formControl {
+                margin-bottom: 16px;
+            }
+
+            .formControl label {
+                font: normal normal bold 10px/14px Heebo;
+                letter-spacing: 0px;
+                color: #011560;
+            }
+
+            .formControl input {
+                width: 286px;
+                height: 34px;
+            }
+
+            form input[type=button] {
+                width: 286px;
+                height: 34px;
+                font: normal normal bold 14px/19px Heebo;
+                letter-spacing: 0.21px;
+                color: #011560;
+                margin: auto;
+                margin-top: 6px;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>תן לנו להוביל אותך קדימה</h1>
+            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+        </header>
+        <form>
+            <div class="formControl">
+                <label for="Name">שם מלא</label>
+                <input type="text">
+            </div>
+            <div class="formControl">
+                <label for="Email">דוא"ל</label>
+                <input type="text">
+            </div>
+            <input type="button" value="שליחה">
+        </form>
+    </div>
+</body>
+
+</html>

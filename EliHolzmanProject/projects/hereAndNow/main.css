@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Using variables*/
+.container {
+  background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+  width: 100vw;
+  height: 1086px;
+}
+
+.container .textContainer {
+  position: absolute;
+  top: 337px;
+  left: 410px;
+  width: 1100px;
+  height: 407px;
+  text-align: center;
+}
+
+.container .textContainer h1 {
+  height: 204px;
+  font: normal normal normal 160px/231px "Satisfy";
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.5294117647);
+}
+
+.container .textContainer h6 {
+  font: normal normal normal 32px/38px "Varela Round";
+  margin-bottom: 18px;
+  color: #FFFFFF;
+}
+
+.container .textContainer p {
+  height: 60px;
+  font-family: "Varela Round";
+  color: rgba(249, 249, 249, 0.6588235294);
+}
+
+.container .textContainer form {
+  width: 1100px;
+  height: 73px;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  direction: rtl;
+  justify-content: space-between;
+}
+
+.container .textContainer form label {
+  font-family: "Varela Round";
+  color: rgba(249, 249, 249, 0.6588235294);
+}
+
+.container .textContainer form input {
+  margin-top: 2px;
+  width: 418px;
+  height: 50px;
+  background: rgba(246, 246, 246, 0.1411764706) 0% 0% no-repeat padding-box;
+  border: 2px solid #FFFFFF;
+}
+
+.container .textContainer form input.button {
+  width: 206px;
+  height: 50px;
+  background-color: #FFFFFF;
+  font-family: "Varela Round";
+  color: #1C1C1C;
+  cursor: pointer;
+  margin-top: 22px;
+  font-size: 16px;
+}
+
+@media (max-width: 370px) {
+  .container {
+    height: 657px;
+  }
+
+  .container .textContainer {
+    top: 90px;
+    left: 21px;
+    width: 328px;
+    height: 466px;
+  }
+
+  .container .textContainer h1 {
+    height: 93px;
+    font: normal normal normal 60px/86px "Satisfy";
+    margin-bottom: 20px;
+  }
+
+  .container .textContainer h6 {
+    font-size: 18px;
+    width: 298px;
+    margin-bottom: 20px;
+  }
+
+  .container .textContainer p {
+    width: 318px;
+    height: 120px;
+    color: #F9F9F9;
+  }
+
+  .container .textContainer form {
+    width: 302px;
+    height: 200px;
+    flex-direction: column;
+  }
+
+  .container .textContainer form label {
+    font-size: 11px;
+  }
+
+  .container .textContainer form input {
+    width: 302px;
+    height: 36px;
+    margin-bottom: 15px;
+  }
+
+  .container .textContainer form input.button {
+    width: 300px;
+    height: 33px;
+    font-size: 11px;
+    color: #2823FD;
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
